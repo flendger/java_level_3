@@ -1,3 +1,5 @@
+package lesson1;
+
 public class Orange implements Fruit {
     @Override
     public float getFruitWeight() {
@@ -6,6 +8,6 @@ public class Orange implements Fruit {
 
     @Override
     public String toString() {
-        return "Orange{"+ getFruitWeight() + "}";
+        return "lesson1.Orange{"+ getFruitWeight() + "}";
     }
 }
