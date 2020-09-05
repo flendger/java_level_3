@@ -1,7 +1,8 @@
 package lesson5;
 
-import java.util.concurrent.Semaphore;
 import lesson5.transports.Transport;
+
+import java.util.concurrent.Semaphore;
 
 public class FuelStation {
     private final Semaphore semaphore;
