@@ -17,6 +17,10 @@ public abstract class BaseTransport implements Transport {
         this.station = station;
     }
 
+    public Float getFuelCapacity() {
+        return fuelCapacity;
+    }
+
     protected String getNumber() {
         return number;
     }
@@ -52,10 +56,9 @@ public abstract class BaseTransport implements Transport {
     }
 
     @Override
-    public Float call() {
+    public void run() {
         drive();
         refuel();
-        return fuelRemaining;
     }
 
 }

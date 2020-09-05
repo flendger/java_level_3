@@ -1,8 +1,7 @@
 package lesson5.transports;
 
-import java.util.concurrent.Callable;
-
-public interface Transport extends Callable<Float> {
+public interface Transport extends Runnable {
     void drive();
     void refuel();
+    Float getFuelCapacity();
 }

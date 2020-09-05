@@ -5,7 +5,7 @@ import lesson5.FuelStation;
 public class Car extends BaseTransport {
 
     public Car(String number, FuelStation station) {
-        super(number, 2.5F, 20F, station);
+        this(number, station, 2.5F);
     }
 
     public Car(String number, FuelStation station, Float fuelConsumption) {
