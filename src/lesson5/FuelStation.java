@@ -16,18 +16,19 @@ public class FuelStation {
             semaphore.acquire();
             float carCapacity = transport.getFuelCapacity();
 
-//            lock.lock();
+            lock.lock();
             if (carCapacity <= this.fuelCapacity) {
+
                 fuelCapacity -= carCapacity;
-//                lock.unlock();
+                lock.unlock();
 
                 System.out.println(transport.toString() + " started refueling...");
                 Thread.sleep(7000);
-//                lock.lock();
+                lock.lock();
                 System.out.println(String.format("%s has refueled... FuelStation current capacity is: %.2f", transport.toString(), fuelCapacity));
-//                lock.unlock();
+                lock.unlock();
             } else {
-//                lock.unlock();
+                lock.unlock();
                 System.out.println(String.format("%s cannot be refueled... FuelStation current capacity is: %.2f", transport.toString(), this.fuelCapacity));
             }
             semaphore.release();
