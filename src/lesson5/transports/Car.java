@@ -8,6 +8,10 @@ public class Car extends BaseTransport {
         super(number, 2.5F, 20F, station);
     }
 
+    public Car(String number, FuelStation station, Float fuelConsumption) {
+        super(number, fuelConsumption, 20F, station);
+    }
+
     @Override
     public String toString() {
         return "Car{" +

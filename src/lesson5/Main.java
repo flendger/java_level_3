@@ -9,18 +9,18 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
-import java.util.concurrent.Semaphore;
 
 public class Main {
     public static void main(String[] args) {
-        FuelStation station = new FuelStation(new Semaphore(3));
+        FuelStation station = new FuelStation();
 
         List<Transport> transports = new ArrayList<>();
         transports.add(new Car("a111aa", station));
         transports.add(new Truck("b222bb", station));
+        transports.add(new Truck("b666bb", station));
         transports.add(new Bus("c333cc", station));
-        transports.add(new Car("a444aa", station));
-        transports.add(new Car("a555aa", station));
+        transports.add(new Car("a444aa", station, 2.0F));
+        transports.add(new Car("a555aa", station, 1.5F));
 
         ExecutorService executorService = Executors.newCachedThreadPool();
         try {
