@@ -1,4 +1,4 @@
-package lesson4;
+package main.lesson4;
 
 public class Lesson4Demo {
     private final Object mon = new Object();

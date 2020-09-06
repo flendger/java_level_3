@@ -1,4 +1,4 @@
-package lesson1;
+package main.lesson1;
 
 public class Orange implements Fruit {
     @Override
@@ -8,6 +8,6 @@ public class Orange implements Fruit {
 
     @Override
     public String toString() {
-        return "lesson1.Orange{"+ getFruitWeight() + "}";
+        return "main.lesson1.Orange{"+ getFruitWeight() + "}";
     }
 }
