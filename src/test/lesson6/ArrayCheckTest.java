@@ -35,14 +35,14 @@ public class ArrayCheckTest {
 
     @Test
     public void shouldReturnFalseCheckArrayOn1or4() {
-        Assertions.assertEquals(false, ArrayCheck.checkArrayOn1or4(new int[] {1, 1, 1, 1}));
-        Assertions.assertEquals(false, ArrayCheck.checkArrayOn1or4(new int[] {4, 4, 4, 4}));
-        Assertions.assertEquals(false, ArrayCheck.checkArrayOn1or4(new int[] {5, 3, 7, 0}));
+        Assertions.assertFalse(ArrayCheck.checkArrayOn1or4(new int[] {1, 1, 1, 1}));
+        Assertions.assertFalse(ArrayCheck.checkArrayOn1or4(new int[] {4, 4, 4, 4}));
+        Assertions.assertFalse(ArrayCheck.checkArrayOn1or4(new int[] {5, 3, 7, 0}));
     }
 
     @Test
     public void shouldReturnTrueCheckArrayOn1or4() {
-        Assertions.assertEquals(true, ArrayCheck.checkArrayOn1or4(new int[] {1, 4, 4, 1}));
-        Assertions.assertEquals(true, ArrayCheck.checkArrayOn1or4(new int[] {1, 4, 3, 6}));
+        Assertions.assertTrue(ArrayCheck.checkArrayOn1or4(new int[] {1, 4, 4, 1}));
+        Assertions.assertTrue(ArrayCheck.checkArrayOn1or4(new int[] {1, 4, 3, 6}));
     }
 }
