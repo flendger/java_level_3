@@ -1,6 +1,6 @@
 package test.lesson6;
 
-import main.lesson6.ArrayCheck;
+import lesson6.ArrayCheck;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;

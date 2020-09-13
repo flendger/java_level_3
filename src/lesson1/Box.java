@@ -1,4 +1,4 @@
-package main.lesson1;
+package lesson1;
 
 import java.util.ArrayList;
 
@@ -19,7 +19,7 @@ public class Box <T extends Fruit> {
 
     @Override
     public String toString() {
-        return "main.lesson1.Box{" +
+        return "lesson1.Box{" +
                 "fruits=" + fruits +
                 '}' + "weight: " + getWeight();
     }
